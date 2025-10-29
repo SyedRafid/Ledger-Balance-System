@@ -66,15 +66,16 @@ php artisan serve
 
 All routes are under /api/.
 
-🧾 ACCOUNTS
-➕ Create Account
+###🧾 ACCOUNTS
+####➕ Create Account
 
 POST /api/accounts
-
+```bash
 Body:
 {
   "name": "Main Bank",
   "accountType": "Bank",
   "balance": 1000
 }
+````
 Automatically adds an "Initial Deposit" transaction if balance > 0.
