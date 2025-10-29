@@ -67,7 +67,7 @@ php artisan serve
 All routes are under /api/.
 
 ### 🧾 ACCOUNTS
-#### ➕ Create Account
+#### 1. ➕ Create Account
 
 POST /api/accounts
 
@@ -81,3 +81,80 @@ Body:
 }
 ````
 Automatically adds an "Initial Deposit" transaction if balance > 0.
+
+#### 2. 📋 List All Accounts
+   GET /api/accounts
+#### 3. 🔍 Show Single Account
+   GET /api/accounts/{id}
+#### 4. ✏️ Update Account
+   PUT /api/accounts/{id}
+   json
+   Body:
+```bash
+   {
+     "name": "Updated Cash Account",
+     "accountType": "Cash"
+   }
+````
+#### 5. ❌ Delete Account
+   DELETE /api/accounts/{id}
+
+
+### 💳 TRANSACTIONS
+####➕ Add Transaction
+
+POST /api/transactions
+   json
+   Body:
+```bash
+   {
+  "account_id": 1,
+  "type": "debit",
+  "amount": 200,
+  "note": "Deposit from sales"
+}
+````
+### 📊 LEDGER REPORT (Bonus Task)
+
+GET /api/ledger/report/{id}
+
+Expected response:
+```bash
+{
+  "account": "Cash Account",
+  "accountType": "Cash",
+  "total_debit": "1200.00",
+  "total_credit": "450.00",
+  "current_balance": "750.00"
+}
+```
+
+---
+
+## 🧩 Core Components
+
+### 1. 🧱 Models
+- Account — represents ledger accounts (Cash, Bank)
+- Transaction — represents financial records (debit/credit)
+
+### 2. ⚙️ Service Class
+App\Services\LedgerService
+Handles all business logic for balance updates and transactions.
+
+### 3. 💡 Facade
+Ledger::addTransaction($data)
+Provides expressive syntax for handling transactions.
+
+### 4. 🧮 Seeder
+Pre-populates Cash and Bank accounts.
+
+---
+
+## 🧠 Evaluation Highlights
+| Criteria             | Description |
+|----------------------|------------------------------------------|
+| Code Quality         | Clean, modular, and PSR-4 compliant      |
+| Service Container    | Used via app(LedgerService::class)       |
+| Logical Structure    | MVC + Service Layer separation           |
+| Bonus Task           | Implemented successfully (Ledger Report) |
+
