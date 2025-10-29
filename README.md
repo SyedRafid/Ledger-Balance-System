@@ -66,11 +66,12 @@ php artisan serve
 
 All routes are under /api/.
 
-###🧾 ACCOUNTS
-####➕ Create Account
+### 🧾 ACCOUNTS
+#### ➕ Create Account
 
 POST /api/accounts
 ```bash
+json
 Body:
 {
   "name": "Main Bank",
