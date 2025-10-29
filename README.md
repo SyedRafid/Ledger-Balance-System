@@ -159,11 +159,12 @@ Pre-populates Cash and Bank accounts.
 | Bonus Task           | Implemented successfully (Ledger Report) |
 
 ---
+---
 ## 🧑‍💻 Author
 Syed Rafid
-📧 Email: Syed.shuvon@gmail.com
-🌐 GitHub: https://github.com/SyedRafid
-💼 Role: Laravel Developer
+- 📧 Email: Syed.shuvon@gmail.com
+- 🌐 GitHub: https://github.com/SyedRafid
+= 💼 Role: Laravel Developer
 ---
 
 ## 🏁 Final Note
