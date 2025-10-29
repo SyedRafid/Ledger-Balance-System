@@ -164,7 +164,7 @@ Pre-populates Cash and Bank accounts.
 Syed Rafid
 - 📧 Email: Syed.shuvon@gmail.com
 - 🌐 GitHub: https://github.com/SyedRafid
-= 💼 Role: Laravel Developer
+- 💼 Role: Laravel Developer
 ---
 
 ## 🏁 Final Note
