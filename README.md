@@ -158,3 +158,18 @@ Pre-populates Cash and Bank accounts.
 | Logical Structure    | MVC + Service Layer separation           |
 | Bonus Task           | Implemented successfully (Ledger Report) |
 
+---
+## 🧑‍💻 Author
+Syed Rafid
+📧 Email: Syed.shuvon@gmail.com
+🌐 GitHub: https://github.com/SyedRafid
+💼 Role: Laravel Developer
+---
+
+## 🏁 Final Note
+
+This project demonstrates:
+
+- Proficiency with Laravel Framework
+- Understanding of OOP, MVC, Services, and Facade
+- Real-world implementation of a SaaS-style accounting module
