@@ -70,9 +70,10 @@ All routes are under /api/.
 #### ➕ Create Account
 
 POST /api/accounts
-```bash
+
 json
 Body:
+```bash
 {
   "name": "Main Bank",
   "accountType": "Bank",
